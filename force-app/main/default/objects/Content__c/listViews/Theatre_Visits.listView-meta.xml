@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Theatre_Visits</fullName>
+    <columns>OBJECT_ID</columns>
+    <columns>Content_Number__c</columns>
+    <columns>Release_Year__c</columns>
+    <columns>Consumption_Year__c</columns>
+    <columns>Consumption_Month__c</columns>
+    <columns>NAME</columns>
+    <columns>Place__c</columns>
+    <columns>Language__c</columns>
+    <columns>Rating__c</columns>
+    <columns>Verdict__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Place__c</field>
+        <operation>equals</operation>
+        <value>Theatre</value>
+    </filters>
+    <label>Theatre Visits</label>
+</ListView>

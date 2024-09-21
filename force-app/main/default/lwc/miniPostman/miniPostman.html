@@ -1,0 +1,83 @@
+<template>
+    <div class="postman-container">
+        <!-- Header Section (URL and Method) -->
+        <div class="slds-grid slds-gutters postman-header">
+            <div class="slds-col slds-size_1-of-5">
+                <lightning-combobox
+                    class="postman-method"
+                    label="Method"
+                    name="method"
+                    value={method}
+                    options={methodOptions}
+                    onchange={handleInputChange}>
+                </lightning-combobox>
+            </div>
+            <div class="slds-col slds-size_4-of-5">
+                <lightning-input
+                    class="postman-url"
+                    label="Request URL"
+                    name="endpoint"
+                    value={endpoint}
+                    onchange={handleInputChange}
+                    placeholder="https://example.com/api">
+                </lightning-input>
+            </div>
+        </div>
+
+        <!-- Tabbed Section for Headers and Body -->
+        <div class="slds-tabs_default postman-tabs">
+            <ul class="slds-tabs_default__nav" role="tablist">
+                <li class="slds-tabs_default__item slds-is-active" title="Headers" role="presentation">
+                    <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" aria-selected="true" aria-controls="headers" id="headers__item" onclick={handleTabClick}>Headers</a>
+                </li>
+                <li class="slds-tabs_default__item" title="Body" role="presentation">
+                    <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" aria-selected="false" aria-controls="body" id="body__item" onclick={handleTabClick}>Body</a>
+                </li>
+            </ul>
+
+            <!-- Headers JSON Textarea -->
+            <div class="slds-tabs_default__content slds-show" id="headers" role="tabpanel" aria-labelledby="headers__item">
+                <lightning-textarea
+                    class="postman-textarea"
+                    label="Headers JSON"
+                    name="headers"
+                    value={headers}
+                    style="min-height: 7.5rem!important;"  
+                    onchange={handleInputChange}
+                    placeholder={headerPlaceholder}>
+                </lightning-textarea>
+            </div>
+
+            <!-- Body JSON Textarea -->
+            <div class="slds-tabs_default__content slds-hide" id="body" role="tabpanel" aria-labelledby="body__item">
+                <lightning-textarea
+                    class="postman-textarea"
+                    label="Body (JSON)"
+                    name="requestBody"
+                    value={requestBody}
+                    style="min-height: 7.5rem!important;" 
+                    onchange={handleInputChange}
+                    placeholder={bodyPlaceholder}>
+                </lightning-textarea>
+            </div>
+        </div>
+
+        <!-- Button Section -->
+        <div class="postman-buttons slds-m-top_medium">
+            <lightning-button class="slds-m-right_small" label="Send Request" variant="brand" onclick={handleCallout}></lightning-button>
+            <lightning-button class="slds-m-right_small" label="Generate Apex Class" onclick={handleGenerateApex}></lightning-button>
+            <lightning-button label="Clear Values" variant="neutral" onclick={handleClearValues}></lightning-button>
+        </div>
+
+        <!-- Response Section -->
+        <div class="postman-response slds-m-top_medium">
+            <lightning-textarea
+                class="postman-response-area postman-textarea"
+                label="Response JSON"
+                value={response}
+                style="min-height: 7.5rem!important;"
+                readonly>
+            </lightning-textarea>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,43 @@
+.postman-container {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.postman-header {
+    margin-bottom: 10px;
+}
+
+.postman-method {
+    width: 100%;
+}
+
+.postman-url {
+    width: 100%;
+}
+
+.postman-tabs {
+    margin-top: 20px;
+}
+
+.postman-textarea {
+    min-height: 7.5rem; 
+    resize: vertical;
+}
+
+.postman-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.postman-response-area {
+    width: 100%;
+    min-height: 200px;
+    font-family: monospace;
+}
+
+.slds-textarea {
+    height: 200px;
+}

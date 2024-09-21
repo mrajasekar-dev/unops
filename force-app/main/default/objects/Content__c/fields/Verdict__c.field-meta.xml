@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verdict__c</fullName>
+    <label>Verdict</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Above Avg</fullName>
+                <default>false</default>
+                <label>Above Avg</label>
+            </value>
+            <value>
+                <fullName>Avg</fullName>
+                <default>false</default>
+                <label>Avg</label>
+            </value>
+            <value>
+                <fullName>Below Avg</fullName>
+                <default>false</default>
+                <label>Below Avg</label>
+            </value>
+            <value>
+                <fullName>Great</fullName>
+                <default>false</default>
+                <label>Great</label>
+            </value>
+            <value>
+                <fullName>Masterpeice</fullName>
+                <default>false</default>
+                <label>Masterpeice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

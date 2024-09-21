@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="QR Code Generator">
+        <div class="slds-var-m-around_medium">
+            <lightning-input label="Enter Text" value={inputText} onchange={handleInputChange}></lightning-input>
+            <lightning-button label="Generate QR Code" onclick={generateQRCode} class="slds-var-m-top_medium"></lightning-button>
+            <div class="slds-var-m-top_medium" lwc:dom="manual" id="qrcode"></div>
+        </div>
+    </lightning-card>
+</template>

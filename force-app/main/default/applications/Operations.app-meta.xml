@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>This App contains all things Operations which aren&apos;t related to Finance or Health.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Operations</label>
+    <navType>Standard</navType>
+    <tabs>Operations_Dashboard</tabs>
+    <tabs>BrowniePoints__c</tabs>
+    <tabs>Month__c</tabs>
+    <tabs>Year__c</tabs>
+    <tabs>Year_Month__c</tabs>
+    <tabs>Year_Week__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Operations_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kind__c</fullName>
+    <label>Kind</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Documentary</fullName>
+                <default>true</default>
+                <label>Documentary</label>
+            </value>
+            <value>
+                <fullName>Feature Film</fullName>
+                <default>false</default>
+                <label>Feature Film</label>
+            </value>
+            <value>
+                <fullName>Series</fullName>
+                <default>false</default>
+                <label>Series</label>
+            </value>
+            <value>
+                <fullName>Short Film</fullName>
+                <default>false</default>
+                <label>Short Film</label>
+            </value>
+            <value>
+                <fullName>Standup Special</fullName>
+                <default>false</default>
+                <label>Standup Special</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Payment QR Code" icon-name="standard:record">
+        <div class="slds-var-m-around_medium">
+            <template if:true={qrCodeUrl}>
+                <img src={qrCodeUrl} alt="QR Code">
+            </template>
+            <template if:false={qrCodeUrl}>
+                <lightning-spinner alternative-text="Loading"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>
