@@ -7,7 +7,7 @@
 }
 
 .postman-header {
-    margin-bottom: 10px;
+    margin-bottom: 0px; /* Tighten spacing */
 }
 
 .postman-method {
@@ -19,25 +19,26 @@
 }
 
 .postman-tabs {
-    margin-top: 20px;
+    margin-top: 10px; /* Reduce margin to tighten up the section */
 }
 
 .postman-textarea {
-    min-height: 7.5rem; 
+    min-height: 2.5rem;
     resize: vertical;
 }
 
 .postman-buttons {
     display: flex;
     justify-content: flex-start;
+    margin-top: 10px; /* Add some space above buttons */
 }
 
 .postman-response-area {
     width: 100%;
-    min-height: 200px;
-    font-family: monospace;
+    font-family: monospace; /* Keeps formatting readable for JSON */
+    white-space: pre-wrap; /* Ensures new lines are preserved */
 }
 
 .slds-textarea {
-    height: 200px;
+    height: 400px;
 }

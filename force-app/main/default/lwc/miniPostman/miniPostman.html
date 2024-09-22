@@ -42,7 +42,6 @@
                     label="Headers JSON"
                     name="headers"
                     value={headers}
-                    style="min-height: 7.5rem!important;"  
                     onchange={handleInputChange}
                     placeholder={headerPlaceholder}>
                 </lightning-textarea>
@@ -55,7 +54,6 @@
                     label="Body (JSON)"
                     name="requestBody"
                     value={requestBody}
-                    style="min-height: 7.5rem!important;" 
                     onchange={handleInputChange}
                     placeholder={bodyPlaceholder}>
                 </lightning-textarea>
@@ -66,18 +64,13 @@
         <div class="postman-buttons slds-m-top_medium">
             <lightning-button class="slds-m-right_small" label="Send Request" variant="brand" onclick={handleCallout}></lightning-button>
             <lightning-button class="slds-m-right_small" label="Generate Apex Class" onclick={handleGenerateApex}></lightning-button>
+            <lightning-button class="slds-m-right_small" label="Generate Anonymous Code" onclick={handleGenerateAnonymousCode}></lightning-button>
             <lightning-button label="Clear Values" variant="neutral" onclick={handleClearValues}></lightning-button>
         </div>
 
-        <!-- Response Section -->
+        <!-- Response Section (visible and styled) -->
         <div class="postman-response slds-m-top_medium">
-            <lightning-textarea
-                class="postman-response-area postman-textarea"
-                label="Response JSON"
-                value={response}
-                style="min-height: 7.5rem!important;"
-                readonly>
-            </lightning-textarea>
+            <lightning-formatted-text class="postman-response-area" value={response}></lightning-formatted-text>
         </div>
     </div>
 </template>
