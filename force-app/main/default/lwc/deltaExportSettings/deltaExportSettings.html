@@ -1,0 +1,53 @@
+<!-- deltaExportSettings.html -->
+<template>
+    <lightning-card title="Delta Export Settings">
+        <div class="slds-p-around_medium">
+            <!-- Object Selection -->
+            <lightning-dual-listbox
+                name="objects"
+                label="Select Objects (Up to 10)"
+                source-label="Available"
+                selected-label="Selected"
+                field-level-help="Choose up to 10 objects to export."
+                options={objectOptions}
+                value={selectedObjects}
+                onchange={handleObjectChange}
+            ></lightning-dual-listbox>
+
+            <!-- Export Frequency -->
+            <lightning-combobox
+                name="frequency"
+                label="Export Frequency"
+                options={frequencyOptions}
+                value={exportFrequency}
+                onchange={handleFrequencyChange}
+            ></lightning-combobox>
+
+            <!-- File Formats -->
+            <lightning-checkbox-group
+                name="fileFormats"
+                label="File Formats"
+                options={formatOptions}
+                value={selectedFormats}
+                onchange={handleFormatChange}
+            ></lightning-checkbox-group>
+
+            <!-- Storage Option -->
+            <lightning-combobox
+                name="storageOption"
+                label="Storage Option"
+                options={storageOptions}
+                value={selectedStorage}
+                onchange={handleStorageChange}
+            ></lightning-combobox>
+
+            <!-- Save Button -->
+            <lightning-button
+                label="Save Settings"
+                variant="brand"
+                onclick={saveSettings}
+                class="slds-m-top_medium"
+            ></lightning-button>
+        </div>
+    </lightning-card>
+</template>
