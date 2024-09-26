@@ -1,5 +1,5 @@
 // deltaExportSettings.js
-import { LightningElement, track, wire } from 'lwc';
+import { LightningElement, track } from 'lwc';
 import getSettings from '@salesforce/apex/DeltaExportSettingsController.getSettings';
 import saveSettings from '@salesforce/apex/DeltaExportSettingsController.saveSettings';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
